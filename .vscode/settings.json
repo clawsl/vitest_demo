@@ -1,0 +1,15 @@
+{
+  "terminal.integrated.profiles.linux": {
+    "zsh": {
+      "path": "zsh"
+    },
+    "bash": {
+      "path": "/bin/bash"
+    }
+  },
+  "terminal.integrated.automationShell.linux": "/bin/bash",
+  "terminal.integrated.env.linux": {
+    "PATH": "${env:PATH}:node_modules/.bin"
+  },
+  "prettier.singleQuote": true
+}

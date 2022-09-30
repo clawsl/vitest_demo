@@ -1,0 +1,40 @@
+{
+  "env": {
+    "commonjs": true,
+    "es6": true,
+    "node": true
+  },
+  "extends": ["airbnb-base", "prettier"],
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly",
+    "describe": "readonly",
+    "expect": "readonly",
+    "it": "readonly",
+    "test": "readonly",
+    "beforeAll": "readonly",
+    "afterAll": "readonly",
+    "beforeEach": "readonly",
+    "afterEach": "readonly",
+    "jest": "readonly"
+  },
+  "parserOptions": {
+    "ecmaVersion": 2022
+  },
+  "rules": {
+    "no-unused-vars": "warn",
+    "no-var": "off",
+    "one-var": "off",
+    "func-names": "off",
+    "camelcase": "off",
+    "prefer-destructuring": "off",
+    "prefer-template": "off",
+    "no-plusplus": "off",
+    "vars-on-top": "off",
+    "arrow-body-style": "off",
+    "no-console": "off",
+    "no-process-exit": "off",
+    "object-shorthand": "off",
+    "class-methods-use-this": "off"
+  }
+}
