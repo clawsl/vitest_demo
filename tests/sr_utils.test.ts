@@ -20,17 +20,18 @@ import { config } from 'dotenv';
 config();
 
 const uploadDate = new Date();
-global.uploadDate = uploadDate;
 
+//@ts-ignore
 import { getS3HeadObjectDate } from '../src/myAWS';
 vi.mock('@/myAWS', () => {
   return {
     getS3HeadObjectDate: vi.fn().mockImplementation((bucket, key) => {
-      return global.uploadDate;
+      return uploadDate;
     }),
   };
 });
 
+//@ts-ignore
 import { getReportOrMappingFiles } from '../src/sr_utils';
 
 describe('Test mapping', () => {
